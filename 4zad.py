@@ -1,7 +1,4 @@
 from PIL import Image, ImageDraw
-N1=1
-N2=255
-N=3
 inp=input().split()
 try:
     N1=int(inp[0])
@@ -30,12 +27,6 @@ except:
 else:
     draw=ImageDraw.Draw(image)
     pix=image.load()
-
-    """N1=int(input())
-    N2=int(input())
-    N=int(input())
-    inp=input()
-    out=input()"""
     for i in range (image.size[0]):
         for j in range (image.size[1]):
             a=pix[i,j][0]
